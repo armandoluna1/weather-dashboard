@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Daycast | Weather dashboard</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body><main><header><strong class="brand"><span aria-hidden="true">◉</span> Daycast</strong><div class="units" aria-label="Temperature units" role="group"><button id="f" aria-pressed="true">°F</button><button id="c" aria-pressed="false">°C</button></div></header>
+<form id="search"><label for="query">Find a location</label><div class="field"><input id="query" type="search" required minlength="2" placeholder="Enter a city or postal code"><button>Search</button></div></form>
+<p id="searchStatus" role="status"></p><div id="matches"></div>
+<section class="hero"><div class="art" aria-hidden="true"></div><div class="content"><small>Current conditions</small><h1 id="place">Elizabeth</h1><p id="region">New Jersey, United States</p><div id="temp">…</div><strong id="condition"></strong><p id="updated"></p></div></section>
+<div class="status"><span id="status" role="status"></span><button id="refresh">Refresh weather</button></div>
+<h2>7-day forecast</h2><div id="week"></div>
+<footer>Weather data from <a href="https://open-meteo.com/">Open-Meteo</a> · Locations from <a href="https://www.geonames.org/">GeoNames</a></footer></main></body></html>
